@@ -9,14 +9,12 @@ import styles from "./Homepage.module.scss";
 
 interface HomepageProps {}
 
-const Homepage: React.FC<HomepageProps> = ({}) => {
+const Homepage: React.FC<HomepageProps> = () => {
   const { handleSubmit } =
     useFormContext<HandleCalculateCitiesAndRoadsRepairCostProps>();
   const [calculationResult, setCalculationResult] = useState<
     number | undefined
   >(undefined);
-
-  // [[1, 2],[3, 1],[2, 3],[1, 5],[2, 5],[3, 5]]
 
   const handleCalculateCitiesAndRoadsRepairCost: SubmitHandler<
     HandleCalculateCitiesAndRoadsRepairCostProps

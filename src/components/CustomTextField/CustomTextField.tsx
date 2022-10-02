@@ -1,5 +1,5 @@
 import { TextField } from "@mui/material";
-import { ReactNode, useEffect } from "react";
+import { ReactNode } from "react";
 import { useFormContext, ValidationRule } from "react-hook-form";
 interface CustomTextFieldProps {
   registeryProp: string;
