@@ -1,0 +1,13 @@
+@use "src/utils";
+
+.container {
+}
+.form {
+  @include utils.gridTemplate(1fr, center, 1.5em);
+  @media (min-width: utils.$tablet-screen) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  &__button {
+    grid-column: 1 / -1;
+  }
+}
