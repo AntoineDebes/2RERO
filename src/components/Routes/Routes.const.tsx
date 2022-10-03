@@ -1,5 +1,5 @@
-import Homepage from "src/pages/Homepage/Homepage";
-import { UseFormContext } from "../UseFormContext";
+import { Homepage } from "src/pages/Homepage";
+import { UseFormContext } from "../../context/UseFormContext";
 
 export const routes = [
   {
